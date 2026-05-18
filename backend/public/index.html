@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>College ERP Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-index">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container px-4">
+        <a class="navbar-brand fw-bold" href="/">CSE College ERP</a>
+        <button class="btn btn-outline-light btn-sm" id="themeToggle">Dark Mode</button>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="hero-section rounded-4 p-5 shadow-sm mb-5 text-center bg-white">
+        <span class="badge bg-primary mb-3">Department of Computer Science</span>
+        <h1 class="display-6 fw-bold">College ERP for HOD, Teachers & Students</h1>
+        <p class="lead text-muted mt-3">A professional web portal to manage student progress, attendance, marks, syllabus updates, and department notices.</p>
+        <div class="btn-group mt-4" role="group">
+          <a href="/hod" class="btn btn-primary btn-lg">HOD Dashboard</a>
+          <a href="/teacher" class="btn btn-outline-primary btn-lg">Teacher Panel</a>
+          <a href="/student" class="btn btn-outline-secondary btn-lg">Student Portal</a>
+        </div>
+      </section>
+
+      <section class="row gy-4">
+        <div class="col-lg-4">
+          <article class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title">Student Insights</h5>
+              <p class="card-text">Students can search with registration number to view marks, attendance, syllabus progress, notices, and teacher details.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title">Teacher Uploads</h5>
+              <p class="card-text">Teachers upload Excel sheets for marks, attendance, and syllabus completion with a single upload flow.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <h5 class="card-title">HOD Analytics</h5>
+              <p class="card-text">HOD can view department analytics, manage teachers, publish notices, and monitor academic progress.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="feature-card p-4 rounded-4 shadow-sm bg-white">
+              <h4>Modern UI</h4>
+              <p>Responsive design with Bootstrap, progress bars, tables, cards, and professional theme styling.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card p-4 rounded-4 shadow-sm bg-white">
+              <h4>Production Ready</h4>
+              <p>Express backend, MySQL database, XLSX file uploads, and REST APIs built for real ERP workflows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-white py-4 border-top">
+      <div class="container text-center text-muted">
+        <small>College ERP Portal | Node.js, Express, MySQL, Bootstrap | Built for the CSE Department</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

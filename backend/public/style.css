@@ -1,0 +1,154 @@
+:root {
+  color-scheme: light;
+  --bg: #f2f6ff;
+  --surface: #ffffff;
+  --surface-alt: #f8fbff;
+  --text: #102a43;
+  --muted: #475569;
+  --primary: #0b5ed7;
+  --primary-soft: #dbeafe;
+  --card-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-alt: #1f2937;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a8a;
+  --card-shadow: 0 22px 55px rgba(0, 0, 0, 0.45);
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.navbar,
+.footer {
+  background: var(--surface) !important;
+}
+
+.navbar-brand,
+.navbar a,
+.navbar button {
+  color: var(--text) !important;
+}
+
+.hero-section,
+.feature-card,
+.profile-card,
+.card,
+.search-card,
+.teacher-login,
+.hod-login,
+.public-card {
+  background: var(--surface);
+}
+
+.card,
+.profile-card,
+.hero-section,
+.feature-card,
+.teacher-login,
+.hod-login,
+.search-card {
+  border: none;
+  box-shadow: var(--card-shadow);
+}
+
+.btn-primary,
+.btn-success,
+.btn-outline-primary {
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-1px);
+}
+
+.page-header h1 {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+}
+
+.page-header p,
+.text-muted {
+  color: var(--muted);
+}
+
+.profile-card p,
+.teacher-login label,
+.hod-login label,
+.card h5,
+.card-title {
+  color: var(--text);
+}
+
+.list-group-item {
+  background: var(--surface);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.progress {
+  height: 14px;
+  border-radius: 999px;
+}
+
+.progress-bar {
+  background: var(--primary);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.status-pill.success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+
+.status-pill.danger {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+}
+
+.footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.card table th,
+.card table td {
+  border-top: 0;
+}
+
+@media (max-width: 992px) {
+  .page-header h1 {
+    font-size: clamp(2.2rem, 6vw, 2.8rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .container,
+  .footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
