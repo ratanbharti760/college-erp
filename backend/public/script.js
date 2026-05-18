@@ -1,4 +1,4 @@
-const apiBase = '/api'
+const apiBase = 'https://your-railway-url.up.railway.app/api'
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme
